@@ -1,0 +1,70 @@
+﻿<style>
+    .grid-contact {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        padding: 60px;
+        height: 100%;
+        flex: 1;
+        overflow: auto;
+    }
+
+    .title {
+        font-family: sherif;
+    }
+    .inputfield {
+        width:100%;
+    }
+</style>
+<div class="grid-contact">
+    <div>
+        <h1 class="title">Contact us</h1>
+        <p>
+            You can reach our offices at <br>
+            (201) 731-6244
+        </p>
+    </div>
+    <div>
+        <h1 class="title">Send us a message</h1>
+        <table style="display:table;width:100%">
+            <tr>
+                <td style="width:90px">
+                    <div>First Name</div>
+                </td>
+                <td>
+                    <input id="firstName" class="inputfield">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>Last Name</div>
+                </td>
+                <td>
+                    <input id="lastName" class="inputfield">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>E-Mail</div>
+                </td>
+                <td>
+                    <input id="email" class="inputfield">
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:baseline">
+                    <div>Message</div>
+                </td>
+                <td>
+                    <textarea id="message" class="inputfield" style="height:120px"></textarea> 
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="Site.MessageSubmitClick()">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
